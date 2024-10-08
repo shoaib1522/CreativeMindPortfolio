@@ -1,29 +1,28 @@
-/* General body styles */
+
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #eef2f3; /* Light mode color */
+  background-color: #eef2f3; 
   margin: 0;
   padding: 0;
   color: #333;
 }
 
-/* Header styles */
 header {
   background-color: #2b6777;
   color: white;
   text-align: center;
-  padding: 30px; /* Increased padding for a better look */
-  border-bottom: 4px solid #ffcc29; /* Added border for styling */
+  padding: 30px; 
+  border-bottom: 4px solid #ffcc29; 
 }
 
 header h1 {
   margin: 0;
-  font-size: 3em; /* Larger font size */
+  font-size: 3em; 
 }
 
 header p {
   margin-top: 10px;
-  font-size: 1.5em; /* Increased font size for the subtitle */
+  font-size: 1.5em; 
 }
 
 /* Profiles Section */
