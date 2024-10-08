@@ -1,7 +1,7 @@
 /* General body styles */
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f4f4f9;
+  background-color: #eef2f3; /* Light mode color */
   margin: 0;
   padding: 0;
   color: #333;
@@ -12,84 +12,102 @@ header {
   background-color: #2b6777;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 30px; /* Increased padding for a better look */
+  border-bottom: 4px solid #ffcc29; /* Added border for styling */
 }
 
 header h1 {
   margin: 0;
-  font-size: 2.5em;
+  font-size: 3em; /* Larger font size */
 }
 
 header p {
-  margin: 5px 0;
-  font-size: 1.1em;
+  margin-top: 10px;
+  font-size: 1.5em; /* Increased font size for the subtitle */
 }
 
-/* Section and about styles */
-section {
-  max-width: 900px;
-  margin: 30px auto;
-  padding: 20px;
+/* Profiles Section */
+section.profiles {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 40px auto;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Profile Card Styles */
+.profile-card {
   background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 350px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-section h2 {
-  border-bottom: 2px solid #2b6777;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
+.profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.profile-card h2 {
+  margin: 15px 0 10px;
   color: #2b6777;
+  font-size: 1.8em;
 }
 
-section ul {
+.profile-card ul {
   list-style: none;
   padding-left: 0;
 }
 
-section ul li {
+.profile-card ul li {
   background-color: #dfe4ea;
-  margin: 10px 0;
+  margin: 8px 0;
   padding: 10px;
   border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-section ul li:hover {
-  background-color: #c1d1db;
-}
-
-.image-container {
-  text-align: center;
-  margin: 20px 0;
+  font-weight: bold;
 }
 
 .round-image {
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 160px;
+  height: 160px;
   object-fit: cover;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
+  margin-bottom: 15px;
 }
 
-.round-image:hover {
-  transform: scale(1.1);
+.description {
+  margin: 10px 0;
+  font-size: 0.95em;
+  color: #666;
 }
 
 footer {
   text-align: center;
-  margin-top: 40px;
-  padding: 10px;
+  padding: 20px;
   background-color: #2b6777;
   color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
-footer a {
-  color: #ffcc29;
-  text-decoration: none;
+footer p {
+  margin: 0;
 }
 
-footer a:hover {
-  text-decoration: underline;
+/* Responsive for mobile */
+@media screen and (max-width: 768px) {
+  section.profiles {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-card {
+    width: 90%;
+  }
 }

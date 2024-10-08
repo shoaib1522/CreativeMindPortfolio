@@ -4,7 +4,7 @@ function toggleTheme() {
   const currentTheme = body.style.backgroundColor;
 
   if (currentTheme === 'black') {
-    body.style.backgroundColor = '#f4f4f9'; // Light mode
+    body.style.backgroundColor = '#eef2f3'; // Light mode
     body.style.color = '#333';
   } else {
     body.style.backgroundColor = 'black'; // Dark mode
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const themeButton = document.createElement('button');
   themeButton.innerText = 'Toggle Dark Mode';
   themeButton.style.cssText = 'position: fixed; bottom: 20px; right: 20px; padding: 10px 20px; background-color: #ffcc29; border: none; border-radius: 5px; cursor: pointer;';
-  
+
   // Append button to the body
   document.body.appendChild(themeButton);
 
